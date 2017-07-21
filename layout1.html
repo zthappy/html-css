@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body, .container {
+            height: 100%;
+        }
+        .container {
+            background-color: #EDF0F5;
+        }
+        .fixedcommon {
+            height: 50px;
+            position: fixed;
+            left: 0;
+            background-color: #fff;
+            width: 100%;
+            background-color: #fff;
+            width: 100%;
+        }
+        header {
+            top: 0;
+        }
+        footer {
+            bottom: 0;
+        }
+        .back {
+            position: absolute;
+            top: 0;
+            left: 5px;
+            color: #28C0B0;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        .title {
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            color: #28C0B0;
+        }
+
+        .listfooter {
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+        .listfooter li {
+            float: left;
+            background-color: #5BCFC2;
+            font-size: 12px;
+            color: white;
+            text-align: center;
+            list-style: none;
+            width: 33.33%;
+            height: 100%;
+            line-height: 100%;
+        }
+        .icon {
+            display: inline-block;
+            height: 25px;
+            width: 26px;
+            background: url("http://img1.40017.cn/touch/hb/c/hcp/icon_sj.png") no-repeat;
+            background-size: 26px 25px;
+            margin-top: 5px;
+        }
+        .content {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="fixedcommon">
+        <div class="back">&lt;</div>
+        <div class="title">Title</div>
+    </header>
+    <div class="content">
+
+    </div>
+    <footer class="fixedcommon">
+        <ul class="listfooter">
+            <li class="mskz">
+                <span class="icon"></span>
+                <p>民宿客栈</p>
+            </li>
+            <li class="fx">
+                <span class="icon"></span>
+                <p>发现</p>
+            </li>
+            <li class="tm">
+                <span class="icon"></span>
+                <p>特卖</p>
+            </li>
+
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
