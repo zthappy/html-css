@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Center</title>
+	<style type="text/css">
+	body {
+		overflow: hidden;
+	}
+	.word,.word2,.word3 {
+		text-align: center;
+		border: 1px solid #999;
+	}
+	.word2 {
+		display: inline-block;
+		width: 200px;
+	}
+	.sym {
+		text-align: center;
+	}
+	.sym1 {
+		height: 100px;
+		width: 100px;
+		background-color: pink;
+		margin: 0 auto;
+	}
+	.sym2 {
+		text-align: center;
+	}
+	.sym3 {
+		display: inline-block;
+		border:1px solid #999;
+	}
+	.sym4 {
+		overflow: hidden;
+		float: left;
+		position: relative;
+		left:50%;
+		width: 100%;
+		/*width: 100px; */
+	}
+	.sym5 {
+		float: left;
+		position: relative;
+		left: -50%;
+		/*width: 50px; */
+	}
+	.par1 {
+		height: 200px;
+		position: relative;
+	}
+	.son1 {
+		position:absolute;
+	  	left:50%;
+	  	transform:translate(-50%,0);
+	  	border:1px solid pink;
+	}
+	.par2 {
+		height: 300px;
+		position: relative;
+	}
+	.son2 {
+		position: absolute;
+		width: 100px;
+		left: 50%;
+		margin-left:-50px; 
+	}
+	</style>
+</head>
+<body>
+	<div class="word">block文字居中</div>
+	<label class="word2">inline文字居中</label>
+	<span class="word3">inline-block文字居中</span>
+	<div class="sym">
+		<div class="sym1">abc</div>
+	</div>
+	<div class="sym2">
+		<div class="sym3">abc</div>
+	</div>
+	<div class="par1">
+		<div class="son1">son1</div>
+	</div>
+	<div class="par2">
+		<div class="son2">son2</div>
+	</div>
+</body>
+</html>
