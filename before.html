@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.test1:before {
+		content: "hello";
+	}
+	.btn {
+		border:1px solid #23beae;
+		height: 30px;
+		width: 110px;
+		line-height: 28px;
+		font-size: 12px;
+		border-radius: 5px;
+		text-align: center;
+		position: relative;
+	}
+	.btn img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	.fromCityListact {
+	    color:#23beae;
+	    border:1px solid #23beae;
+	    width: 110px;
+	    height: 30px;
+	    line-height: 30px;
+	    text-align:center;
+	    position: relative;
+	}
+	.fromCityListact:after {
+	    content: "";
+	    position: absolute;
+	    bottom: 2px;
+	    right: 3px;
+	    width: 3px;
+	    height: 6px;
+	    border-right: 1px solid #fff;
+	    border-bottom: 1px solid #fff;
+	    transform:rotate(45deg);
+	}
+	.fromCityListact:before {
+	    content: "";
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    width: 0;
+	    height: 0;
+	    border-bottom: 15px solid #23beae;
+	    border-left: 15px solid transparent;
+	}
+	.thin-border-top {
+		position: relative;
+	}
+	.thin-border-top:before{
+	    content: '';
+	    position: absolute;
+	    width: 200%;
+	    height: 1px;
+	    top: 0;
+	    border-bottom: 1px solid #000;
+	    transform-origin: 0 0;
+	    transform: scale(.5,.5);
+	    box-sizing: border-box
+	}
+	</style>
+</head>
+<body>
+	<div class="test1">你好</div>
+	<div class="btn">Test<img src="http://op3y7nhgg.bkt.clouddn.com/choose.png"></div>
+	<div class="fromCityListact">Test2</div>
+	<div class="thin-border-top"></div>
+</body>
+</html>
+
