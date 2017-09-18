@@ -50,20 +50,73 @@
 
 	}
 	.circle {
+		position: relative;
 		height: 100px;
 		width: 100px;
 		border-radius: 50%;
 		background: pink;
 		animation: cir 5s linear infinite;
 	}
-
+	.flag {
+		position: absolute;
+		top: 0;
+		left: 50%;
+	}
+	.pre2 {
+		height: 30px;
+		width: 300px;
+		border-radius: 30px;
+		background: #a9a9a9;
+	}
+	@keyframes test2 {
+		0% {
+			width: 100px;
+			background: #9a3da2; 
+		}
+		50% {
+			width: 200px;
+			background: #9a3da2; 
+		}
+		100% {
+			width: 300px;
+			background: #9a3da2; 
+		}
+	}
+	.showpre2 {
+		width: 100%;
+		border-radius: 30px;
+		background: #9a3da2; 
+		height: 30px;
+		animation: test2 3s linear;
+	}
 	</style>
 </head>
-<body>
+<body>	
+	进度条1
 	<div class="pre1">
 		<div class="showpre1"></div>
 	</div>
-
-	<div class="circle"></div>
+	进度条2
+	<div class="pre2" id="pre2">
+		<div class="showpre2"></div>
+	</div><div id="num">0</div>
+	旋转的圆圈
+	<div class="circle">
+		<div class="flag">..</div>
+	</div>
+	<script type="text/javascript">
+		window.onload= function(){
+			var num = document.getElementById("num").innerHTML;
+			console.log(num);
+			var inter = setInterval(function(){
+				num = Number(num) + 1;
+				if(num == 100){
+					clearInterval(inter);
+				}
+				document.getElementById("num").innerHTML = num;
+			},30)
+		}
+		
+	</script>
 </body>
 </html>
